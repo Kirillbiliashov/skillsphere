@@ -1,9 +1,10 @@
 ﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace SkillSphere.Model.Db
 {
-	public abstract class User
+	public class User
 	{
 		public int Id { get; set; }
 
@@ -30,9 +31,8 @@ namespace SkillSphere.Model.Db
         [MaxLength(50)]
         public string Location { get; set; }
 
-        public List<Chat> Chats { get; set; }
-
-        public List<Rating> Ratings { get; set; }
+        [DefaultValue(false)]
+        public bool IsAdmin { get; set; }
 
     }
 }
