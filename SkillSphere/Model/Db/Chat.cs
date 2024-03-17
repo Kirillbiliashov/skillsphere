@@ -12,6 +12,12 @@ namespace SkillSphere.Model.Db
 		public DateTime CreatedAt { get; set; }
 
 		public List<Message> Messages { get; set; }
+
+		public Freelancer Freelancer { get; set; }
+
+        public Client Client { get; set; }
+
+        public Job Job { get; set; }
     }
 }
 

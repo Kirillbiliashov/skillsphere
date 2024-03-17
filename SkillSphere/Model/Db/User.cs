@@ -34,6 +34,8 @@ namespace SkillSphere.Model.Db
         [DefaultValue(false)]
         public bool IsAdmin { get; set; }
 
+        public List<Message> Messages { get; set; }
+
     }
 }
 

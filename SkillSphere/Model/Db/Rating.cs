@@ -18,7 +18,13 @@ namespace SkillSphere.Model.Db
         [Required]
 		public bool IsFreelancerRated { get; set; }
 
+		public Freelancer Freelancer { get; set; }
 
-	}
+        public Job Job { get; set; }
+
+        public Client Client { get; set; }
+
+
+    }
 }
 

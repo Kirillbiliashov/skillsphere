@@ -16,6 +16,6 @@ namespace SkillSphere.Model.Db
 		public DateTime SentAt { get; set; }
 
 		public Chat Chat { get; set; }
-	}
+    }
 }
 
